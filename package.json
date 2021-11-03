@@ -1,0 +1,18 @@
+{
+  "name": "runculator",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "debug": "node --inspect node_modules/.bin/jest --runInBand",
+    "build": "parcel build ./index.html",
+    "deploy": "gh-pages -b master -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.0.0"
+  }
+}
