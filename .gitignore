@@ -1,0 +1,7 @@
+
+.parcel-cache/
+dist/
+.vscode/launch.json
+node_modules/
+package-lock.json
+package.json
