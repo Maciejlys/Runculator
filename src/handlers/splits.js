@@ -74,7 +74,6 @@ const readGeneratedInputs = (amount) => {
         checkInputs(inputs)
         calculateTotalTimeInSec(inputs);
     } catch (error) {
-        console.log(error);
         alert('Please enter accurat values');
     }
 }

@@ -17,11 +17,13 @@ const getFulltimeFromSeconds = time => {
 }
 
 const parseTextInput = (inputId) => {
-    const rawInput = document.getElementById(inputId).value;
+    const rawInput = document.getElementById(inputId);
+    const rawValue = document.getElementById(inputId).value;
 
-    const value = parseInt(rawInput) || 0;
+    const value = parseInt(rawValue) || 0;
     if (value < 0) {
         alert(`Invalid values`);
+        rawInput.value = "";
     } else {
         return value;
     }

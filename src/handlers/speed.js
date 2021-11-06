@@ -22,8 +22,13 @@ const handleSpeedCalculation = () => {
         secInput,
         output
     ] = readElementsValue("speedminInput", "speedsecInput", "speedoutput");
-    const [min, sec] = validateValues(minInput.value, secInput.value);
-    const speed = calculateSpeed(min, sec);
+    try {
+        const [min, sec] = validateValues(minInput.value, secInput.value);
+        const speed = calculateSpeed(min, sec);
+    } catch (error) {
+        minInput.value = "";
+        secInput.value = "";
+    }
     if (Number.isFinite(speed)) {
         output.innerHTML = `${speed} km/h`;
     }

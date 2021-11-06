@@ -28,7 +28,8 @@ const handleTotalTimeCalculation = () => {
         const [hours, minutes, seconds] = getFulltimeFromSeconds(total, distance);
         output.innerHTML = `${hours} h ${minutes} min ${seconds} sec`;
     } catch (error) {
-        totalminInput.innerHTML = "";
+        totalminInput.value = "";
+        totalsecInput.value = "";
         alert("Invalid values");
     }
 }
