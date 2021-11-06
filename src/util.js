@@ -20,11 +20,11 @@ const parseTextInput = (inputId) => {
     const rawInput = document.getElementById(inputId).value;
 
     const value = parseInt(rawInput) || 0;
-
-    value <= 0 ?? alert('Please enter number higher than 0');
-    value <= 0 ?? alert('Please enter number lower than 1000');
-
-    return value;
+    if (value < 0) {
+        alert(`Invalid values`);
+    } else {
+        return value;
+    }
 }
 
 const parseSelectInput = (inputId) => {
