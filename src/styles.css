@@ -94,6 +94,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     .calculator {
         margin-top: 25%;
     }
+
+    .footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
 }
 
 /*#region button-27*/
